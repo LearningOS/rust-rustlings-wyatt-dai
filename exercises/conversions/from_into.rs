@@ -35,7 +35,7 @@ impl Default for Person {
 // If while parsing the age, something goes wrong, then return the default of Person
 // Otherwise, then return an instantiated Person object with the results
 
-
+// I am not done
 impl From<&str> for Person {
     fn from(s: &str) -> Person {
 		let mut splits=s.split(",");
@@ -57,7 +57,7 @@ impl From<&str> for Person {
 			Ok(x)=>age_p=x,
 			Err(..)=>age_p=1000,
 		}
-		if (l_s.is_empty()||age_p==1000){return Person {
+		if l_s.is_empty()||age_p==1000{return Person {
             name: String::from("John"),
             age: 30,
         }}
